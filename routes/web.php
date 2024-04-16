@@ -14,9 +14,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
 Route::controller(GenderController::class)->group(function(){
 Route::get('/genders', 'index');
 Route::get('/gender/create', 'create');
